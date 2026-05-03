@@ -1,36 +1,29 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <!-- Title: optimized for SEO -->
-
   <title>AI Governance & Strategy | Martin Dober</title>
-
+  
   <!-- Meta Description: clear and SEO-friendly -->
-
   <meta name="description" content="25+ years in AI governance, strategy, and transformation for healthcare, financial services, and other regulated industries. Co-founder of EmpathicAI. Advisory and programme execution expertise.">
-
+  
   <!-- Keywords: important search terms -->
-
   <meta name="keywords" content="AI governance, AI strategy, healthcare AI, Martin Dober, transformation, analytics, regulated industries, Zurich, Doha, EmpathicAI">
-
+  
   <!-- Open Graph Meta Tags -->
-
   <meta property="og:title" content="AI Governance & Strategy | Martin Dober">
   <meta property="og:description" content="25+ years in AI governance, strategy, and transformation for healthcare and regulated industries.">
   <meta property="og:image" content="https://martindober.github.io/martin-headshot.jpeg">
   <meta property="og:url" content="https://martindober.github.io">
   <meta property="og:type" content="website">
-
+  
   <!-- Canonical Link -->
-
   <link rel="canonical" href="https://martindober.github.io">
-
+  
   <!-- Fonts -->
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Newsreader:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
 <style>
@@ -48,327 +41,325 @@
     --success: #10b981;
   }
 
-- { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-background: var(–primary);
-color: var(–text-primary);
-font-family: ‘Inter’, system-ui, sans-serif;
-font-weight: 300;
-min-height: 100vh;
-line-height: 1.6;
-}
+  body {
+    background: var(--primary);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
 
-/* Subtle background */
-body::before {
-content: ‘’;
-position: fixed;
-inset: 0;
-background:
-radial-gradient(circle at 25% 25%, rgba(99,102,241,0.02) 0%, transparent 50%),
-radial-gradient(circle at 75% 75%, rgba(16,185,129,0.015) 0%, transparent 50%),
-linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.003) 100%);
-pointer-events: none;
-}
+  /* Subtle background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(circle at 25% 25%, rgba(99,102,241,0.02) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(16,185,129,0.015) 0%, transparent 50%),
+      linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.003) 100%);
+    pointer-events: none;
+  }
 
-.container {
-position: relative;
-max-width: 480px;
-margin: 0 auto;
-padding: 48px 24px 64px;
-}
+  .container {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 48px 24px 64px;
+  }
 
-/* Header */
-.header {
-text-align: center;
-margin-bottom: 40px;
-opacity: 0;
-animation: fadeUp 0.6s ease 0.1s forwards;
-}
+  /* Header */
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.1s forwards;
+  }
 
-.avatar-container {
-position: relative;
-width: 96px;
-height: 96px;
-margin: 0 auto 24px;
-}
+  .avatar-container {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 24px;
+  }
 
-.avatar-ring {
-position: absolute;
-inset: -2px;
-border-radius: 50%;
-background: linear-gradient(135deg, var(–accent), var(–success));
-opacity: 0.8;
-}
+  .avatar-ring {
+    position: absolute;
+    inset: -2px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--success));
+    opacity: 0.8;
+  }
 
-.avatar {
-position: relative;
-width: 96px;
-height: 96px;
-border-radius: 50%;
-overflow: hidden;
-background: var(–surface);
-border: 2px solid var(–primary);
-display: flex;
-align-items: center;
-justify-content: center;
-font-family: ‘Newsreader’, serif;
-font-size: 28px;
-color: var(–accent);
-letter-spacing: 1px;
-font-weight: 500;
-}
+  .avatar {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--surface);
+    border: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Newsreader', serif;
+    font-size: 28px;
+    color: var(--accent);
+    letter-spacing: 1px;
+    font-weight: 500;
+  }
 
-.avatar img {
-width: 100%;
-height: 100%;
-object-fit: cover;
-filter: brightness(1.05) contrast(1.02);
-position: absolute;
-top: 0;
-left: 0;
-}
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(1.05) contrast(1.02);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-.tagline {
-display: inline-flex;
-align-items: center;
-gap: 6px;
-font-size: 0.75rem;
-font-weight: 500;
-letter-spacing: 1.5px;
-text-transform: uppercase;
-color: var(–accent);
-margin-bottom: 8px;
-background: var(–accent-subtle);
-border: 1px solid rgba(99,102,241,0.2);
-border-radius: 20px;
-padding: 6px 12px;
-}
+  .tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+    background: var(--accent-subtle);
+    border: 1px solid rgba(99,102,241,0.2);
+    border-radius: 20px;
+    padding: 6px 12px;
+  }
 
-.tagline::before {
-content: ‘’;
-width: 4px;
-height: 4px;
-border-radius: 50%;
-background: var(–accent);
-}
+  .tagline::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
 
-.name {
-font-family: ‘Newsreader’, serif;
-font-size: 2.2rem;
-font-weight: 700;
-color: #1a1a1d;
-text-shadow: none;
-letter-spacing: -0.02em;
-line-height: 1.1;
-margin-bottom: 16px;
-}
+  .name {
+    font-family: 'Newsreader', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1a1a1d;
+    text-shadow: none;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 16px;
+  }
 
-.bio {
-font-size: 0.95rem;
-line-height: 1.65;
-color: #52525b;
-max-width: 400px;
-margin: 0 auto;
-}
+  .bio {
+    font-size: 0.95rem;
+    line-height: 1.65;
+    color: #52525b;
+    max-width: 400px;
+    margin: 0 auto;
+  }
 
-/* Divider */
-.divider {
-width: 32px;
-height: 1px;
-background: var(–border);
-margin: 32px auto;
-position: relative;
-opacity: 0;
-animation: fadeUp 0.6s ease 0.2s forwards;
-}
+  /* Divider */
+  .divider {
+    width: 32px;
+    height: 1px;
+    background: var(--border);
+    margin: 32px auto;
+    position: relative;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.2s forwards;
+  }
 
-.divider::before {
-content: ‘’;
-position: absolute;
-left: 50%;
-top: 50%;
-transform: translate(-50%, -50%);
-width: 3px;
-height: 3px;
-border-radius: 50%;
-background: var(–accent);
-}
+  .divider::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
 
-/* Section label */
-.section-label {
-font-size: 0.7rem;
-font-weight: 500;
-letter-spacing: 2px;
-text-transform: uppercase;
-color: var(–text-muted);
-margin-bottom: 16px;
-opacity: 0;
-animation: fadeUp 0.6s ease 0.25s forwards;
-}
+  /* Section label */
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.25s forwards;
+  }
 
-/* Links */
-.links {
-display: flex;
-flex-direction: column;
-gap: 8px;
-margin-bottom: 40px;
-}
+  /* Links */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 40px;
+  }
 
-.link-card {
-display: flex;
-align-items: center;
-gap:14px;
-padding: 14px 18px;
-border-radius: 12px;
-background: var(–surface);
-border: 1px solid var(–border-subtle);
-text-decoration: none;
-color: var(–text-primary);
-transition: all 0.2s ease;
-position: relative;
-opacity: 0;
-animation: fadeUp 0.5s ease forwards;
-}
+  .link-card {
+    display: flex;
+    align-items: center;
+    gap:14px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    position: relative;
+    opacity: 0;
+    animation: fadeUp 0.5s ease forwards;
+  }
 
-.link-card::before {
-content: ‘’;
-position: absolute;
-inset: 0;
-border-radius: 12px;
-background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(16,185,129,0.04));
-opacity: 0;
-transition: opacity 0.2s ease;
-}
+  .link-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(16,185,129,0.04));
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
 
-.link-card:hover {
-border-color: var(–border);
-background: var(–surface-elevated);
-transform: translateY(-1px);
-}
+  .link-card:hover {
+    border-color: var(--border);
+    background: var(--surface-elevated);
+    transform: translateY(-1px);
+  }
 
-.link-card:hover::before { opacity: 1; }
-.link-card:hover .arrow { opacity: 1; transform: translateX(1px); }
+  .link-card:hover::before { opacity: 1; }
+  .link-card:hover .arrow { opacity: 1; transform: translateX(1px); }
 
-.link-icon {
-width: 32px;
-height: 32px;
-border-radius: 8px;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-shrink: 0;
-background: var(–surface-elevated);
-border: 1px solid var(–border-subtle);
-}
+  .link-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    background: var(--surface-elevated);
+    border: 1px solid var(--border-subtle);
+  }
 
-.link-icon svg { width: 16px; height: 16px; }
+  .link-icon svg { width: 16px; height: 16px; }
 
-.link-text {
-flex: 1;
-}
+  .link-text {
+    flex: 1;
+  }
 
-.link-title {
-font-size: 0.9rem;
-font-weight: 500;
-color: var(–text-primary);
-margin-bottom: 2px;
-}
+  .link-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+  }
 
-.link-subtitle {
-font-size: 0.75rem;
-color: var(–text-muted);
-}
+  .link-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
 
-.arrow {
-opacity: 0.4;
-transition: all 0.2s ease;
-color: var(–text-secondary);
-font-size: 13px;
-}
+  .arrow {
+    opacity: 0.4;
+    transition: all 0.2s ease;
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
 
-/* Icon color variants */
-.icon-linkedin { color: #0a66c2; }
-.icon-instagram { color: #e4405f; }
-.icon-substack { color: #ff6719; }
-.icon-gamma { color: var(–accent); }
-.icon-bluesky { color: #00a8e8; }
-.icon-coffee { color: #d97706; }
+  /* Icon color variants */
+  .icon-linkedin { color: #0a66c2; }
+  .icon-instagram { color: #e4405f; }
+  .icon-substack { color: #ff6719; }
+  .icon-gamma { color: var(--accent); }
+  .icon-bluesky { color: #00a8e8; }
+  .icon-coffee { color: #d97706; }
 
-/* Specialties section */
-.specialties-section {
-margin-bottom: 36px;
-opacity: 0;
-animation: fadeUp 0.6s ease 0.6s forwards;
-}
+  /* Specialties section */
+  .specialties-section {
+    margin-bottom: 36px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.6s forwards;
+  }
 
-.specialties-grid {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-gap: 8px;
-}
+  .specialties-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
 
-.specialty-card {
-padding: 12px 16px;
-border-radius: 10px;
-background: var(–surface);
-border: 1px solid var(–border-subtle);
-font-size: 0.8rem;
-color: var(–text-secondary);
-line-height: 1.4;
-}
+  .specialty-card {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--border-subtle);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
 
-.specialty-card strong {
-display: block;
-color: var(–text-primary);
-font-size: 0.85rem;
-font-weight: 500;
-margin-bottom: 2px;
-}
+  .specialty-card strong {
+    display: block;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 2px;
+  }
 
-/* Footer */
-.footer {
-text-align: center;
-font-size: 0.7rem;
-color: var(–text-muted);
-letter-spacing: 0.5px;
-opacity: 0;
-animation: fadeUp 0.6s ease 0.65s forwards;
-}
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.5px;
+    opacity: 0;
+    animation: fadeUp 0.6s ease 0.65s forwards;
+  }
 
-.footer a {
-color: var(–text-secondary);
-text-decoration: none;
-}
+  .footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
 
-.footer a:hover { color: var(–accent); }
+  .footer a:hover { color: var(--accent); }
 
-/* Staggered card delays */
-.link-card:nth-child(1) { animation-delay: 0.3s; }
-.link-card:nth-child(2) { animation-delay: 0.35s; }
-.link-card:nth-child(3) { animation-delay: 0.4s; }
-.link-card:nth-child(4) { animation-delay: 0.45s; }
-.link-card:nth-child(5) { animation-delay: 0.5s; }
-.link-card:nth-child(6) { animation-delay: 0.55s; }
+  /* Staggered card delays */
+  .link-card:nth-child(1) { animation-delay: 0.3s; }
+  .link-card:nth-child(2) { animation-delay: 0.35s; }
+  .link-card:nth-child(3) { animation-delay: 0.4s; }
+  .link-card:nth-child(4) { animation-delay: 0.45s; }
+  .link-card:nth-child(5) { animation-delay: 0.5s; }
+  .link-card:nth-child(6) { animation-delay: 0.55s; }
 
-@keyframes fadeUp {
-from { opacity: 0; transform: translateY(12px); }
-to { opacity: 1; transform: translateY(0); }
-}
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
 
-@media (max-width: 400px) {
-.name { font-size: 1.9rem; }
-.specialties-grid { grid-template-columns: 1fr; }
-.container { padding: 40px 20px 56px; }
-}
+  @media (max-width: 400px) {
+    .name { font-size: 1.9rem; }
+    .specialties-grid { grid-template-columns: 1fr; }
+    .container { padding: 40px 20px 56px; }
+  }
 </style>
-
 </head>
 <body>
 <div class="container">
 
   <!-- Header -->
-
   <div class="header">
     <div class="avatar-container">
       <div class="avatar-ring"></div>
@@ -385,103 +376,99 @@ to { opacity: 1; transform: translateY(0); }
   <div class="divider"></div>
 
   <!-- Connect -->
-
   <div class="section-label">Connect</div>
   <div class="links">
 
-```
-<a href="https://www.linkedin.com/in/dober-martin" target="_blank" rel="noopener" class="link-card">
-  <div class="link-icon icon-linkedin">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">LinkedIn</div>
-    <div class="link-subtitle">Professional updates and insights</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
+    <a href="https://www.linkedin.com/in/dober-martin" target="_blank" rel="noopener" class="link-card">
+      <div class="link-icon icon-linkedin">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">LinkedIn</div>
+        <div class="link-subtitle">Professional updates and insights</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
-<a href="https://www.instagram.com/mdober_ai4life" target="_blank" rel="noopener" class="link-card">
-  <div class="link-icon icon-instagram">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">Instagram</div>
-    <div class="link-subtitle">@mdober_ai4life</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
+    <a href="https://www.instagram.com/mdober_ai4life" target="_blank" rel="noopener" class="link-card">
+      <div class="link-icon icon-instagram">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Instagram</div>
+        <div class="link-subtitle">@mdober_ai4life</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
-<a href="https://open.substack.com/pub/martindober715592" target="_blank" rel="noopener" class="link-card">
-  <div class="link-icon icon-substack">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">Newsletter</div>
-    <div class="link-subtitle">AI transformation insights</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
+    <a href="https://open.substack.com/pub/martindober715592" target="_blank" rel="noopener" class="link-card">
+      <div class="link-icon icon-substack">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Newsletter</div>
+        <div class="link-subtitle">AI transformation insights</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
-<a href="https://bsky.app/profile/martindober.bsky.social" target="_blank" rel="noopener" class="link-card">
-  <div class="link-icon icon-bluesky">
-    <svg viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566 1.023 1.198.74.597 1.043c-.625.314-.895 1.005-.895 1.79 0 1.687.379 5.108.379 5.108.185 3.24 1.55 3.653 3.379 3.634 2.565-.025 5.631-4.667 5.631-4.667s3.066 4.642 5.631 4.667c1.829.019 3.194-.394 3.379-3.634 0 0 .379-3.421.379-5.108 0-.785-.27-1.476-.895-1.79-.601-.303-1.969.02-4.605 1.802C16.046 4.747 13.087 8.686 12 10.8z"/>
-      <path d="M12 10.8c1.222 1.481 3.455 4.567 3.834 6.395.17.817.27 1.511-.57 2.04-.77.486-2.19.248-3.87-1.509-2.65-2.767-2.65-2.767-2.65-2.767s0 0-2.65 2.767c-1.68 1.757-3.1 1.995-3.87 1.509-.84-.529-.74-1.223-.57-2.04.379-1.828 2.612-4.914 3.834-6.395"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">Bluesky</div>
-    <div class="link-subtitle">@martindober.bsky.social</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
+    <a href="https://bsky.app/profile/martindober.bsky.social" target="_blank" rel="noopener" class="link-card">
+      <div class="link-icon icon-bluesky">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566 1.023 1.198.74.597 1.043c-.625.314-.895 1.005-.895 1.79 0 1.687.379 5.108.379 5.108.185 3.24 1.55 3.653 3.379 3.634 2.565-.025 5.631-4.667 5.631-4.667s3.066 4.642 5.631 4.667c1.829.019 3.194-.394 3.379-3.634 0 0 .379-3.421.379-5.108 0-.785-.27-1.476-.895-1.79-.601-.303-1.969.02-4.605 1.802C16.046 4.747 13.087 8.686 12 10.8z"/>
+          <path d="M12 10.8c1.222 1.481 3.455 4.567 3.834 6.395.17.817.27 1.511-.57 2.04-.77.486-2.19.248-3.87-1.509-2.65-2.767-2.65-2.767-2.65-2.767s0 0-2.65 2.767c-1.68 1.757-3.1 1.995-3.87 1.509-.84-.529-.74-1.223-.57-2.04.379-1.828 2.612-4.914 3.834-6.395"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Bluesky</div>
+        <div class="link-subtitle">@martindober.bsky.social</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
-<a href="https://gamma.app/docs/Operations-leader-AI-governance-advisor-Healthcare-venture-builde-bnf6xsztydoym0r" target="_blank" rel="noopener" class="link-card">
-  <div class="link-icon icon-gamma">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-      <polyline points="14,2 14,8 20,8"/>
-      <line x1="16" y1="13" x2="8" y2="13"/>
-      <line x1="16" y1="17" x2="8" y2="17"/>
-      <polyline points="10,9 9,9 8,9"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">Advisory Profile</div>
-    <div class="link-subtitle">Operations and AI governance expertise</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
+    <a href="https://gamma.app/docs/Operations-leader-AI-governance-advisor-Healthcare-venture-builde-bnf6xsztydoym0r" target="_blank" rel="noopener" class="link-card">
+      <div class="link-icon icon-gamma">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14,2 14,8 20,8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10,9 9,9 8,9"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Advisory Profile</div>
+        <div class="link-subtitle">Operations and AI governance expertise</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
-<a href="mailto:martin@empathicai.life?subject=Let's%20Connect&body=Hi%20Martin,%0A%0AI'd%20love%20to%20start%20a%20conversation%20about..." class="link-card">
-  <div class="link-icon icon-coffee">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-      <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-      <line x1="6" y1="1" x2="6" y2="4"/>
-      <line x1="10" y1="1" x2="10" y2="4"/>
-      <line x1="14" y1="1" x2="14" y2="4"/>
-    </svg>
-  </div>
-  <div class="link-text">
-    <div class="link-title">Start a conversation</div>
-    <div class="link-subtitle">Let's connect and discuss opportunities</div>
-  </div>
-  <div class="arrow">↗</div>
-</a>
-```
+    <a href="mailto:martin@empathicai.life?subject=Let's%20Connect&body=Hi%20Martin,%0A%0AI'd%20love%20to%20start%20a%20conversation%20about..." class="link-card">
+      <div class="link-icon icon-coffee">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+          <line x1="6" y1="1" x2="6" y2="4"/>
+          <line x1="10" y1="1" x2="10" y2="4"/>
+          <line x1="14" y1="1" x2="14" y2="4"/>
+        </svg>
+      </div>
+      <div class="link-text">
+        <div class="link-title">Start a conversation</div>
+        <div class="link-subtitle">Let's connect and discuss opportunities</div>
+      </div>
+      <div class="arrow">↗</div>
+    </a>
 
   </div>
 
   <!-- Specialties -->
-
   <div class="specialties-section">
     <div class="section-label">Focus areas</div>
     <div class="specialties-grid">
